@@ -31,7 +31,7 @@ const App = () => {
         <Header isRegistered={isRegistered} onLogout={handleLogout} />
         <main className="flex-grow">
           <Routes>
-            <Route path="/home" element={<Home />} /> {/* Home page */}
+            <Route path="/" element={<Home />} /> 
             
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register onRegister={handleRegistration} />} />

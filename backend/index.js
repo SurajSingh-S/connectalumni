@@ -15,8 +15,11 @@ app.use(express.json());
 app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
-    origin:['http://localhost:5173', 'http://localhost:5175','http://localhost:5174'],
-    credentials:true
+    origin:['http://localhost:5173', 'http://localhost:5175','http://localhost:5174',
+        'https://connect-alumni-mern.vercel.app/'
+    ],
+    credentials:true,
+
 }
 
 app.use(cors(corsOptions));

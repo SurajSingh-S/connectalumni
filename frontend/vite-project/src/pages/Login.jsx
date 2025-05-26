@@ -17,7 +17,7 @@ const Login = () => {
       const response = await axios.post(`${USER_API_END_POINT}/login`, {
         email,
         password
-      });
+      },{  withCredentials: true });
 
       if (response.data.token) {
         login(response.data);
@@ -84,7 +84,7 @@ const Login = () => {
         </div>
       </div>
 
-      {/* Right Side: Image */}
+      {/* Right Side*/}
       <div className="hidden md:block md:w-2/3">
         <img
           src="https://images.unsplash.com/photo-1571260899304-425eee4c7efc?auto=format&fit=crop&w=1350&q=80"
