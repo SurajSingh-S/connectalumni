@@ -16,7 +16,8 @@ app.use(express.urlencoded({extended:true}));
 app.use(cookieParser());
 const corsOptions = {
     origin:['http://localhost:5173', 'http://localhost:5175','http://localhost:5174',
-        'https://connect-alumni-mern.vercel.app/'
+        'https://connect-alumni-mern.vercel.app/',
+            'https://frontendalumni.netlify.app/'
     ],
     credentials:true,
 
